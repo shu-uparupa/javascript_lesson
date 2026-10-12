@@ -8,7 +8,7 @@ console.log('私のニックネームは' + nickname + 'です。年齢は' + ag
 
 //Q2 配列
 let languages = ['JavaScript', 'PHP', 'Ruby', 'Python','Go',];
-console.log('私の好きな言語は' + languages[0] + 'です。次は' + languages[3] + 'を勉強してみたいです。');
+console.log(`私の好きな言語は${languages[0]}です。次は${languages[3]}を勉強してみたいです。`);
 
 //Q3 オブジェクト
 let user = {
@@ -56,7 +56,7 @@ sayHello();
 const sayWorld = function(){
   console.log('World');
 };
-
+sayWorld();
 //Q7 メソッド
 /*Q3のuser変数
 let user = {
@@ -66,12 +66,12 @@ let user = {
   favorite: 'card',
 };*/
 //7-1
-user.birthday = '2009-09-27';
+user.birthday = '2000-09-27';
 
 //7-2
 user.sayHello = function(){
-  console.log('Hello!');
-}
+  console.log('Hello！');
+};
 
 user.sayHello();
 
@@ -84,10 +84,10 @@ calc.add = function (x, y){
 calc.add(3, 4);
 
 //2 つの引数 x, y の差をコンソールに出力する subtract メソッドを定義し、10 になるように実行して下さい。
-calc.sbtract = function (x, y){
+calc.subtract = function (x, y){
   console.log(x - y);
 };
-calc.sbtract(11, 1);
+calc.subtract(11, 1);
 
 //2 つの引数 x, y の積をコンソールに出力する multiply メソッドを定義し、49 になるように実行して下さい。
 calc.multiply = function (x, y){
@@ -105,8 +105,8 @@ calc.divide(10, 2);
 function remainder(x, y){
   return x % y;
 };
-let result = remainder(5, 3)
-console.log("5を3で割った余りは" + result + "です。");
+let result = remainder(5, 3);
+console.log("5 を 3 で割った余りは " + result + " です。");
 
 //Q10 スコープ
 //変数xは関数fooの中でのみ定義されたローカル変数であり、スコープは関数内に限られる。
